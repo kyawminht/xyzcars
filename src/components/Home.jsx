@@ -22,17 +22,17 @@ const Home = () => {
         <table className=' border-gray-400 p-3'>
         <thead>
           <tr>
-            <th className="py-2 px-4 border-b">Name</th>
+            <th className="py-2 px-4 border-b">Make</th>
+            <th className="py-2 px-4 border-b">Model</th>
             <th className="py-2 px-4 border-b">Price</th>
-            <th className="py-2 px-4 border-b">Category</th>
           </tr>
         </thead>
         <tbody>
           {products.map((product) => (
-            <tr key={product.proId}>
-              <td className="py-2 px-4 border-b">{product.prodName}</td>
-              <td className="py-2 px-4 border-b">{product.prodPrice}</td>
-              <td className="py-2 px-4 border-b">{product.prodCategory}</td>
+            <tr key={product.id}>
+              <td className="py-2 px-4 border-b">{product.make}</td>
+              <td className="py-2 px-4 border-b">{product.model}</td>
+              <td className="py-2 px-4 border-b">{product.price}</td>
             </tr>
           ))}
         </tbody>
